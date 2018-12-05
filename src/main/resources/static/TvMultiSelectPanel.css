@@ -1,0 +1,241 @@
+/***
+ * Plugin TVMultiSelectPanel was developed by ThanhVan at 15/11/2018
+ * use plugin jquery-1.10.2
+ * user bootstrap 3.3.7
+ * use font awe-some 4.7.0
+ * ver 1.0.1
+ */
+.tv-select-panel {
+    width: 100%;
+    display: block;
+    position: relative;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    border: 1px solid #7d7d7d;
+}
+.footer-height-center {
+    margin-top: 3px;
+    display: inline-flex;
+}
+.space {
+    font-size: 8px;
+}
+.search-input-group {
+    max-width: 234px;
+    margin-top: 4px;
+}
+.input-search, .input-search[disabled] {
+    padding: 2px 7px;
+    font-size: 14px;
+    border: 1px solid gainsboro;
+    background: white;
+    width: 200px;
+    outline: none;
+}
+.input-search:focus {
+    outline: none;
+}
+.align-height-center-left {
+    display: inline-block;
+    margin-top: 9px;
+}
+.align-height-center-right {
+    display: inline-block;
+    margin-top: 3px;
+}
+.tv-select-header {
+    border-bottom: 1px solid #D3D3D3;
+    box-shadow: 0px 4px 19px #EEEEEE;
+}
+.tv-select-footer {
+    border-top: 1px solid #D3D3D3;
+    text-overflow: ellipsis;
+}
+.tv-select-panel-content-wrapper {
+    display: block;
+    overflow: auto;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+.tv-select-element {
+    padding: 0px 12px!important;
+    margin-left: 10px;
+    display: table-cell;
+    border: 1px solid #425801;
+    cursor: pointer;
+    height: 28px;
+    font-family: "Segoe UI";
+
+    color: #fff;
+    border-radius: 2px;
+    font-size: 14px;
+    transition: box-shadow 100ms linear;
+}
+.tv-select-element_show {
+    padding: 0px 12px!important;
+    margin-left: 10px;
+    display: table-cell;
+    border: 1px solid black;
+    height: 28px;
+    /*line-height: 26px;*/
+    background: #6F9301;
+
+    font-family: "Segoe UI";
+    color: #fff;
+    border-radius: 2px;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: unset;
+}
+.tv-select-element:hover {
+    box-shadow: 3px 3px 5px #7EA700;
+}
+
+.tv-check-box-element, .tv-select-element {
+    margin-top: 10px;
+}
+.tv-check-box-element {
+    width: 20px;
+    display: flex;
+    align-items: center;
+}
+.tv-select-panel input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+}
+.tv-check-box-element input {
+    width: 14px;
+    height: 14px;
+    margin: 0!important;
+}
+.tv-check-box-wrapper {
+    width: 20px;
+    display: inline-block;
+    float: left;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+.tv-select-footer, .tv-select-header{
+    min-height: 40px;
+    position: relative;
+    display: block;
+    padding: 5px;
+    font-size: 14.5px;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.tv-select-header {
+    padding-top: 0;
+}
+.number-content {
+    font-size: 13.5px;
+    font-weight: 600;
+}
+.loading-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    z-index: 9999;
+    font-size: 15px;
+}
+.previewDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    z-index: 9999;
+    padding-bottom: 10px;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+.select-all-span, .blue-span {
+    color: #a4a0a0;
+}
+.select-all-span-focus {
+    color: black;
+}
+.search-div {
+    display: block;
+}
+.error-wrapper {
+    border: 1px solid red;
+}
+.search-header {
+    padding: 5px 10px 0 5px;
+    display: block;
+}
+.search-header-left {
+    display: inline-block;
+    float: left;
+    font-size: 13.5px;
+}
+.search-header-right {
+    display: inline-block;
+    float: right;
+    font-size: 13.5px;
+}
+.clearfix {
+    clear: both;
+}
+.search-icon {
+    padding: 0 10px!important;
+}
+.clear-search {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    display: none;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+.blue-mode {
+    font-size: 14.5px;
+    font-weight: normal;
+    color: #a4a0a0;
+    cursor: pointer;
+}
+.active-mode {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+.blue-smooth {
+    color: #535353;
+}
+.hide {
+    display: none;
+}
+.btn-xs-custom {
+    padding: 4px 8px;
+    font-size: 13.5px;
+    font-weight: 500;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #EEEEEE;
+    cursor: pointer;
+    transition: box-shadow 100ms linear;
+}
+
+.btn-xs-custom:hover{
+    box-shadow: 1px 1.5px 6px #E6E5E5;
+    border:1px solid #6F9301;
+}
+.btn-xs-custom:active {
+    box-shadow: none;
+}
+button.btn-xs-custom {
+    background: #eee;
+}
