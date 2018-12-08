@@ -1,1 +1,1 @@
-# multi select panel tv is jquery plugins, please vote star if you like it! Thanks
+# multi select panel tv is jquery plugin, please vote star if you like it! Thanks
